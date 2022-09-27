@@ -375,7 +375,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 .green-article {
@@ -386,6 +386,44 @@ label {
 .product-imgs, .service-imgs {
     width: 100%;
     border-radius: 10px;
+}
+
+.supplier-img {
+    width: 100%;
+}
+
+.supplier-link {
+    background-color: var(--wht);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 45px;
+    width: 75px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supplier-link:hover {
+    z-index: 1;
+    transform: scale(105%);
+}
+
+.senco-link {
+    background-color: var(--blk);
+}
+
+.empire-img {
+    width: 70%;
+}
+
+.supplier-link-ul {
+   display: flex;
+   flex-direction: row;
+}
+
+.supplier-link-ul li {
+    padding: 5px;
 }
 
 /* Mobile - Products */
