@@ -199,6 +199,7 @@ label {
 
 #home-services {
     background-color: var(--grn);
+    border-radius: 15px;
 }
 
 
