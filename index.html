@@ -10,9 +10,7 @@
         <meta name="author" content="Bobby Sherman">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        -->
 
         <!-- fontawesome - version 5 -->
         <script src="https://kit.fontawesome.com/a97cb00c73.js" crossorigin="anonymous"></script>
@@ -21,7 +19,7 @@
 
     <body id="home-body">
         <header>
-            <a class="logo-link" href="index.html"><img class="head-logo" src="---" alt="Logo"></a>
+            <a class="logo-link" href="index.html"><img class="head-logo" src="/assets/logo/Sheridan-lumber-logo-v2-white.png" alt="Logo"></a>
             <i class="menu-toggle fas fa-bars"></i>
             <nav role="navigation">
                 <ul class="nav-ul">
@@ -29,72 +27,78 @@
                     <li class="nav-li"><a class="nav-link" href="pages/products.html">Products</a></li>
                     <li class="nav-li"><a class="nav-link" href="pages/services.html">Services</a></li>
                     <li class="nav-li"><a class="nav-link" href="pages/contact.html">Contact</a></li>
-                    <li class="nav-li"><a class="head-nbr nav-button" href="tel:309-691-0858">Call Us!</a></li>
-                    <li class="nav-li"><a class="nav-link nav-button" href="https://go.thryv.com/site/cmira02d0vkgmdkm/upload-document?action=76bsg1pt2rcwp5ub" target="_blank">Send a file</a></li>
+                    <div class="nav-btn-wrapper">
+                        <li class="nav-li"><a class="nav-link nav-button" href="tel:309-691-0858">Call Us!</a></li>
+                        <li class="nav-li"><a class="nav-link nav-button" href="https://go.thryv.com/site/cmira02d0vkgmdkm/upload-document?action=76bsg1pt2rcwp5ub" target="_blank">Send a file</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
 
         <main id="home-main">
-            <section is="hero">
+            <section id="hero">
                 <!-- css background image -->
-                <img class="hero-logo" src="---" alt="Sheridan Lumber Logo">
+                <img class="hero-logo" src="/assets/logo/Sheridan-lumber-logo-v2-white.png" alt="Sheridan Lumber Logo">
                 <p>Trusted lumberyard of the Peoria, IL area since 1972</p>
             </section>
 
             <section id="home-products">
                 <h2>Products</h2>
 
-                <article>
-                    <a class="---" href="pages/products.html#products-doors"><img class="---" src="---" alt="front door of a modern home"></a>
-                    <p>Doors</p>
-                </article>
+                <div class="home-flex-wrapper">
+                    <article>
+                        <a href="pages/products.html#products-doors"><img class="home-imgs" src="---" alt="front door of a modern home"></a>
+                        <p class="hm-prd-p">Doors</p>
+                    </article>
 
-                <article>
-                    <a class="---" href="pages/products.html#products-windows"><img class="---" src="---" alt="large window in an empty room"></a>
-                    <p>Windows</p>
-                </article>
+                    <article>
+                        <a href="pages/products.html#products-windows"><img class="home-imgs" src="---" alt="large window in an empty room"></a>
+                        <p class="hm-prd-p">Windows</p>
+                    </article>
 
-                <article>
-                    <a class="---" href="pages/products.html#products-decks"><img class="---" src="---" alt="grey deck with table and seating"></a>
-                    <p>Decking</p>
-                </article>
+                    <article>
+                        <a href="pages/products.html#products-decks"><img class="home-imgs" src="---" alt="grey deck with table and seating"></a>
+                        <p class="hm-prd-p">Decking</p>
+                    </article>
+                </div>
 
-                <a class="---" href="pages/products.html">More</a>
+                <a class="btn" href="pages/products.html">More</a>
             </section>
 
             <section id="home-services">
                 <h2>Services</h2>
 
-                <article>
-                    <a class="---" href="pages/services.html#services-delivery"><img class="---" src="---" alt="a sheridan lumber flatbed with a delivery on the bed"></a>
-                    <p>Delivery</p>
-                </article>
+                <div class="home-flex-wrapper">
+                    <article>
+                        <a href="pages/services.html#services-delivery"><img class="home-imgs" src="---" alt="a sheridan lumber flatbed with a delivery on the bed"></a>
+                        <p class="hm-srv-p">Delivery</p>
+                    </article>
 
-                <article>
-                    <a class="---" href="pages/services.html#services-screen-room"><img class="---" src="---" alt="a screen room on the side of a house"></a>
-                    <p>Screen Rooms</p>
-                </article>
+                    <article>
+                        <a href="pages/services.html#services-screen-room"><img class="home-imgs" src="---" alt="a screen room on the side of a house"></a>
+                        <p class="hm-srv-p">Screen Rooms</p>
+                    </article>
 
-                <article>
-                    <a class="---" href="pages/services.html#services-wood-shop"><img class="---" src="---" alt="a man measuring a piece of plywood"></a>
-                    <p>Wood Shop</p>
-                </article>
+                    <article>
+                        <a href="pages/services.html#services-wood-shop"><img class="home-imgs" src="---" alt="a man measuring a piece of plywood"></a>
+                        <p class="hm-srv-p">Wood Shop</p>
+                    </article>
+                </div>
 
-                <a class="---" href="pages/services.html">More</a>
+                <a class="btn-blk" href="pages/services.html">More</a>
             </section>
 
             <section id="home-links">
                 <article>
                     <h3>Call Us!</h3>
                     <p>Sheridan Lumber has a knowledgeable staff that can answer questions and help you plan your next project.</p>
-                    <a class="---" href="tel:309-691-0858">Call Us!</a>
+                    <a class="btn" href="tel:309-691-0858">Call Us!</a>
                 </article>
 
                 <article>
                     <h3>Send a file</h3>
                     <p>Need a quote on an upcoming project? Use the link below to send a file and the sales staff will respond as soon as possible!</p>
-                    <a class="---" href="https://go.thryv.com/site/cmira02d0vkgmdkm/upload-document?action=76bsg1pt2rcwp5ub" target="_blank">Send a file</a>
+                    <a class="btn" href="https://go.thryv.com/site/cmira02d0vkgmdkm/upload-document?action=76bsg1pt2rcwp5ub" target="_blank">Send a file</a>
                 </article>
             </section>
         </main>
@@ -110,6 +114,6 @@
                 <p>Site for educational purposes only</p>
             </section>
         </footer>
-        <!-- <script src="script.js"></script> -->
+        <script src="script.js"></script>
     </body>
 </html>
