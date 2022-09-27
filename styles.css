@@ -324,7 +324,6 @@ label {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transition: .3s ease;
-    background-color: var(--w);
 }
 
 #home-products a:hover, #home-services a:hover {
