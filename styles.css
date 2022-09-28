@@ -62,7 +62,7 @@ header {
 .nav-button {
     background-color: var(--grn);
     border: 2px solid var(--grn);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 7px 10px;
 }
 
@@ -126,6 +126,19 @@ footer section p {
     color: var(--grn);
 }
 
+.wht-text {
+    color: var(--wht);
+}
+
+.wht-list li {
+    color: var(--wht);
+}
+
+.page-title {
+    border-bottom: 3px solid var(--grn);
+    margin-bottom: 40px;
+}
+
 /* Global - Text */
 h1 {
     font-weight: var(--bold);
@@ -164,7 +177,7 @@ label {
     color: var(--wht);
     background-color: var(--grn);
     border: 2px solid var(--grn);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px 15px;
     transition: .3s ease;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -182,7 +195,7 @@ label {
     color: var(--wht);
     background-color: var(--blk);
     border: 2px solid var(--blk);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 10px 15px;
     transition: .3s ease;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -318,7 +331,7 @@ label {
     padding: 75px 40px;
 }
 
-#home-products a, #home-services a {
+.home-flex-wrapper a {
     max-width: 450px;
     margin-bottom: 75px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -326,7 +339,7 @@ label {
     transition: .3s ease;
 }
 
-#home-products a:hover, #home-services a:hover {
+.home-flex-wrapper a:hover {
     z-index: 1 ;
     transform: scale(105%);
 }
@@ -369,6 +382,12 @@ label {
     margin-top: 75px;
 }
 
+#home-links article .btn:hover {
+    background-color: var(--blk);
+    z-index: 1 ;
+    transform: scale(105%);
+}
+
 .home-imgs {
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -381,18 +400,20 @@ label {
 }
 
 
-/* Mobile - Products + Services Template */
+/* Mobile - Products + Services */
 #products-main, #services-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 30px;
+    padding: 30px 0;
+    font-size: 85%;
 }
 
 #products-main article, #services-main article {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 40px 40px 50px 40px;
+    margin-bottom: 50px;
 }
 
 .green-article {
@@ -427,10 +448,6 @@ label {
     transform: scale(105%);
 }
 
-.senco-link {
-    background-color: var(--blk);
-}
-
 .empire-img {
     width: 70%;
 }
@@ -442,7 +459,24 @@ label {
 }
 
 .supplier-link-ul li {
-    padding: 5px;
+    padding-right: 10px;
+}
+
+.description-h2 {
+    padding: 20px 0 10px 0;
+    font-size: 150%;
+}
+
+#products-main .description-p {
+    padding-bottom: 30px;
+}
+
+.flex-order-a {
+    order: 2;
+}
+
+.flex-order-b {
+    order: 1;
 }
 
 /* Mobile - Products */
