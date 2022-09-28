@@ -77,6 +77,11 @@ header {
     display: none !important;
     cursor: pointer;
     color: var(--grn);
+    transition: .3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(110%);
 }
 
 .current-page {
@@ -166,7 +171,7 @@ h4 {
 
 label {
     font-weight: var(--med);
-    font-size: 125%;
+    font-size: 100%;
 }
 
 
@@ -479,18 +484,73 @@ label {
     order: 1;
 }
 
-/* Mobile - Products */
-
-
-
-
-/* Mobile - services */
-
-
-
 
 /* Mobile - Contact */
+#contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
 
+#contact-info h3 {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+}
+
+label {
+    margin-right: 10px;
+    color: var(--wht);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#contact-info a {
+    margin-bottom: 30px;
+}
+
+#contact-info p {
+    margin-bottom: 20px;
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grn);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.submit {
+    width: 100px;
+    align-self: flex-end;
+}
 }
 
 

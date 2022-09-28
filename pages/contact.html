@@ -39,7 +39,7 @@
         <main id="contact-main">
             <h1 class="page-title">Contact</h1>
 
-            <article>
+            <article id="contact-info">
                 <h3>Address</h3>
                 <a class="" href="https://maps.google.com/?q=6600 N Sheridan Road, Peoria, IL 61614" target="_blank">6600 N Sheridan Road Peoria, IL 61614</a>
 
@@ -67,11 +67,16 @@
             </article>
 
             <form id="contact-form">
-                <label for="first-name" class="label">First Name</label>
-                <input type="text" name="name" id="first-name" class="inputs" placeholder="First name" required>
 
-                <label for="last-name" class="label">Last Name</label>
-                <input type="text" name="name" id="last-name" class="inputs" placeholder="Last name" required>
+                <div class="form-wrap">
+                    <label for="first-name" class="label">First Name
+                        <input type="text" name="name" id="first-name" class="inputs" placeholder="First name" required>
+                    </label>
+                    
+                    <label for="last-name" class="label">Last Name
+                        <input type="text" name="name" id="last-name" class="inputs" placeholder="Last name" required>
+                    </label>
+                </div>
 
                 <label for="email" class="label">Email</label>
                 <input type="email" name="email" id="email" class="inputs" placeholder="email@email.com" required>
@@ -79,7 +84,7 @@
                 <label for="message" class="label"></label>
                 <textarea name="message" id="message" placeholder="Enter your message here..." required></textarea>
 
-                <input type="submit" value="Submit" class="btn">
+                <input type="submit" value="Submit" class="submit btn-blk">
             </form>
         </main>
         
