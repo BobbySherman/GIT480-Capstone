@@ -37,55 +37,58 @@
         </header>
 
         <main id="contact-main">
-            <h1 class="page-title">Contact</h1>
+                <h1 class="page-title">Contact</h1>
 
-            <article id="contact-info">
-                <h3>Address</h3>
-                <a class="" href="https://maps.google.com/?q=6600 N Sheridan Road, Peoria, IL 61614" target="_blank">6600 N Sheridan Road Peoria, IL 61614</a>
+            <div class="contact-flex-wrap">
+                <article id="contact-info">
+                    <h3>Address</h3>
+                    <a class="" href="https://maps.google.com/?q=6600 N Sheridan Road, Peoria, IL 61614" target="_blank">6600 N Sheridan Road Peoria, IL 61614</a>
 
-                <h3>Phone</h3>
-                <a class="" href="tel:309-691-0858">309-691-0858</a>
+                    <h3>Phone</h3>
+                    <a class="" href="tel:309-691-0858">309-691-0858</a>
 
-                <h3>Email</h3>
-                <a class="" href="mailto:info@srlco.com">info@srlco.com</a>
+                    <h3>Email</h3>
+                    <a class="" href="mailto:info@srlco.com">info@srlco.com</a>
 
-                <h3>Hours</h3>
-                <h4>Monday</h4>
-                <p>7:00 am - 4:30 pm</p>
-                <h4>Tuesday</h4>
-                <p>7:00 am - 4:30 pm</p>
-                <h4>Wednesday</h4>
-                <p>7:00 am - 4:30 pm</p>
-                <h4>Thursday</h4>
-                <p>7:00 am - 4:30 pm</p>
-                <h4>Friday</h4>
-                <p>7:00 am - 4:30 pm</p>
-                <h4>Saturday</h4>
-                <p>Closed</p>
-                <h4>Sunday</h4>
-                <p>Closed</p>
-            </article>
+                    <h3>Hours</h3>
+                    <div class="contact-hours-wrap">
+                        <h4>Monday</h4>
+                        <p>7:00 am - 4:30 pm</p>
+                        <h4>Tuesday</h4>
+                        <p>7:00 am - 4:30 pm</p>
+                        <h4>Wednesday</h4>
+                        <p>7:00 am - 4:30 pm</p>
+                        <h4>Thursday</h4>
+                        <p>7:00 am - 4:30 pm</p>
+                        <h4>Friday</h4>
+                        <p>7:00 am - 4:30 pm</p>
+                        <h4>Saturday</h4>
+                        <p>Closed</p>
+                        <h4>Sunday</h4>
+                        <p>Closed</p>
+                    </div>
+                </article>
 
-            <form id="contact-form">
+                <form id="contact-form">
+                    <div class="form-wrap">
+                        <label for="first-name" class="label">First Name
+                            <input type="text" name="name" id="first-name" class="inputs" placeholder="First name" required>
+                        </label>
+                        
+                        <label for="last-name" class="label">Last Name
+                            <input type="text" name="name" id="last-name" class="inputs" placeholder="Last name" required>
+                        </label>
+                    </div>
 
-                <div class="form-wrap">
-                    <label for="first-name" class="label">First Name
-                        <input type="text" name="name" id="first-name" class="inputs" placeholder="First name" required>
-                    </label>
-                    
-                    <label for="last-name" class="label">Last Name
-                        <input type="text" name="name" id="last-name" class="inputs" placeholder="Last name" required>
-                    </label>
-                </div>
+                    <label for="email" class="label">Email</label>
+                    <input type="email" name="email" id="email" class="inputs" placeholder="email@email.com" required>
 
-                <label for="email" class="label">Email</label>
-                <input type="email" name="email" id="email" class="inputs" placeholder="email@email.com" required>
+                    <label for="message" class="label"></label>
+                    <textarea name="message" id="message" placeholder="Enter your message here..." required></textarea>
 
-                <label for="message" class="label"></label>
-                <textarea name="message" id="message" placeholder="Enter your message here..." required></textarea>
-
-                <input type="submit" value="Submit" class="submit btn-blk">
-            </form>
+                    <input type="submit" value="Submit" class="submit btn-blk">
+                </form>
+            </div>
         </main>
         
         <footer id="footer">
