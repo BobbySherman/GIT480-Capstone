@@ -231,8 +231,8 @@ label {
     justify-content: center;
     background-image: 
         linear-gradient( 
-            rgba(0, 0, 0, .5), 
-            rgba(0, 0, 0, .5) ), 
+            rgba(0, 0, 0, .45), 
+            rgba(0, 0, 0, .45) ), 
             url(assets/home/pexels-pixabay-164558.jpg)
             ;
     background-repeat: no-repeat;
@@ -790,7 +790,7 @@ textarea:focus {
 
     /* Nav */
     header {
-        padding: 15px 30px;
+        padding: 20px 30px;
     }
 
     .logo-link {
@@ -886,6 +886,7 @@ textarea:focus {
 
     .description-p {
         font-size: 120%;
+        max-width: 500px;
     }
 
     .bullet-list {
