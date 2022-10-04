@@ -242,6 +242,7 @@ label {
 }
 
 #hero p {
+    padding-top: 10px;
     text-align: center;
     color: var(--wht);
     font-weight: var(--med);
@@ -482,9 +483,16 @@ textarea:focus {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+.contact-hours-wrap {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-auto-flow: row;
+    gap: 0 15px;
+}
+
 
 /* Hamburger Nav */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1078px) {
     .logo-link {
         width: 150px;
     }
@@ -537,12 +545,8 @@ textarea:focus {
     }
 }
 
-/* Mobile */
-@media screen and (min-width: 360px) and (max-width: 600px) {
-    /* Mobile - GLOBAL */
-
-
-
+/* Mobile - Small */
+@media screen and (min-width: 350px) and (max-width: 750px) {
     /* Mobile - Home */
     #hero {
         height: 50vh;
@@ -553,7 +557,6 @@ textarea:focus {
     }
 
     #hero p {
-        padding-top: 10px;
         width: 275px;
     }
 
@@ -590,8 +593,16 @@ textarea:focus {
     /* Mobile - Products + Services */
     #products-main article, #services-main article {
         flex-direction: column;
-        padding: 40px 40px 50px 40px;
+        padding: 60px 50px 70px 50px;
         margin: 50px 0;
+    }
+
+    .description-p {
+        font-size: 110%;
+    }
+
+    .bullet-list {
+        font-size: 90%;
     }
 
     .product-imgs, .service-imgs {
@@ -600,7 +611,7 @@ textarea:focus {
 
     .description-h2 {
         padding: 20px 0 10px 0;
-        font-size: 150%;
+        font-size: 160%;
     }
 
     .bullet-list {
@@ -634,22 +645,137 @@ textarea:focus {
     #contact-form {
         margin-top: 50px;
     }
-
-    .contact-hours-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 
 
-/* Desktop */
-@media screen and (min-width: 1025px) {
+/* Medium */
+@media screen and (min-width: 751px) and (max-width: 1078px) {
     /* Desktop - Global */
+    header {
+        padding: 20px 30px;
+    }
+
+    .logo-link {
+        width: 200px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
+    }
+
+    /* Home */
+    #hero {
+        height: 80vh;
+    }
+
+    .hero-logo {
+        width: 40%;
+    }
+
+    #hero p {
+        font-size: 110%;
+        width: 350px;
+    }
+
+    .home-flex-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-flex-wrapper a {
+        width: 30%;
+    }
+
+    .hm-prd-p, .hm-srv-p {
+        font-size: 120%;
+    }
+
+    #home-links {
+        justify-content: space-around;
+    }
+
+    #home-links article {
+        width: 45%;
+    }
+
+    #home-links article p {
+        padding: 25px;
+    }
+
+    #home-links article .btn {
+        margin-top: 50px;
+    }
+
+
+    /* Products + Services */
+    #products-main article, #services-main article {
+        justify-content: space-around;
+        align-items: center;
+        padding: 35px 10px;
+        margin: 50px 0;
+    }
+
+    .product-imgs, .service-imgs {
+        width: 43%;
+    }
+
+    #products-main article section, #services-main article section {
+        width: 43%;
+    }
+
+    .description-p {
+        font-size: 90%;
+    }
+
+    .bullet-list {
+        padding-top: 10px;
+        font-size: 75%;
+    }
+
+    .description-h2 {
+        padding-bottom: 10px;
+        font-size: 140%;
+    }
+
+    /* Contact */
+    .contact-flex-wrap {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    form {
+        width: 70%;
+        margin-top: 100px;
+    }
+
+    #contact-info {
+        align-items: center;
+    }
+
+}
+
+
+/* Large */
+@media screen and (min-width: 1079px) {
+    /* Desktop - Global */
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        max-width: 2000px;
     }
 
 
@@ -690,8 +816,8 @@ textarea:focus {
     }
 
     #hero p {
-        font-size: 120%;
-        width: 25%;
+        font-size: 130%;
+        width: 400px;
     }
 
     .home-flex-wrapper {
@@ -718,55 +844,68 @@ textarea:focus {
 
     #home-links article p {
         padding: 50px;
+        font-size: 120%;
     }
 
     #home-links article .btn {
         margin-top: 100px;
     }
 
-    /* Products + Services Template */
+    #home-links article h3 {
+        font-size: 170%;
+    }
+
+    /* Products + Services */
     #products-main article, #services-main article {
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 60px;
         margin: 50px 0;
     }
 
     .product-imgs, .service-imgs {
-        width: 42%;
+        width: 45%;
     }
 
     #products-main article section, #services-main article section {
-        width: 42%;
+        width: 45%;
     }
 
-    .description-p, .bullet-list {
-        font-size: 125%;
+    .description-p {
+        font-size: 120%;
     }
 
     .bullet-list {
         padding-top: 10px;
+        font-size: 100%;
     }
 
     .description-h2 {
         padding-bottom: 10px;
     }
 
+
     /* Contact */
     .contact-flex-wrap {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 50px 0;
     }
 
-    textarea {
-        height: 300px;
+    #contact-main {
+        width: 85%;
     }
 
-    .contact-hours-wrap {
-        display: grid;
-        grid-template-columns: .5fr 1fr;
-        grid-auto-flow: row;
+    textarea {
+        height: 200px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .contact-info {
+        width: 50%;
     }
 
 }
