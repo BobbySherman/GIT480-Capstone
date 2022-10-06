@@ -272,6 +272,7 @@ label {
     border-radius: 10px;
     transition: .3s ease;
     text-align: center;
+    background-color: var(--wht);
 }
 
 .home-flex-wrapper a:hover {
@@ -308,6 +309,7 @@ label {
 .hm-prd-p, .hm-srv-p {
     font-weight: var(--med);
     padding: 10px;
+    color: var(--blk);
 }
 
 #home-links {
