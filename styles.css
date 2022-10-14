@@ -80,10 +80,6 @@ header {
     transition: .3s ease;
 }
 
-.menu-toggle:hover {
-    transform: scale(110%);
-}
-
 .current-page {
     border-bottom: 3px solid var(--grn);
 }
@@ -191,7 +187,7 @@ label {
     background-color: var(--wht);
     color: var(--grn);
     z-index: 1;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .btn-blk {
@@ -211,7 +207,7 @@ label {
     background-color: var(--grn);
     color: var(--blk);
     z-index: 1;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 #home-links .btn:hover {
@@ -219,7 +215,7 @@ label {
     background-color: var(--blk);
     color: var(--grn);
     z-index: 1;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 
@@ -277,7 +273,7 @@ label {
 
 .home-flex-wrapper a:hover {
     z-index: 1 ;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .home-imgs {
@@ -380,7 +376,7 @@ label {
 
 .supplier-link:hover {
     z-index: 1;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .supplier-link-ul {
@@ -541,10 +537,6 @@ textarea:focus {
     .no-scroll {
         overflow: hidden;
     }
-
-    .nav-btn-wrapper {
-        padding-top: 50px;
-    }
 }
 
 /* Mobile - Small */
@@ -583,7 +575,7 @@ textarea:focus {
     #home-links article .btn:hover {
         background-color: var(--blk);
         z-index: 1 ;
-        transform: scale(105%);
+        transform: scale(1.05);
     }
 
     .hm-prd-p, .hm-srv-p {
@@ -814,6 +806,11 @@ textarea:focus {
 
     .nav-btn-wrapper {
         display: flex;
+    }
+
+    .nested-nav-ul {
+        display: flex;
+        align-items: center;
     }
 
 
